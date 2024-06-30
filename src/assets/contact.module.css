@@ -1,0 +1,18 @@
+
+.popupError{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 20px;
+    background-color: #0073df;
+    animation: showAnim 1s forwards;
+    border-radius:0 0 7px 7px;
+   
+  
+}
+@keyframes showAnim {
+    to{
+        background: rgb(252, 80, 80);
+    }
+}

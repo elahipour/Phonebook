@@ -1,0 +1,23 @@
+.header{
+    width: calc( 100% - 20px );
+    display: flex;
+    justify-content: center;
+    padding: 45px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    color: #0073df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container>h1{
+    margin:22px 0;
+    text-align: center;
+}
+.container>p>span:first-child{
+color: #fff;
+background-color: #0073df;
+padding: 5px 8px;
+border-radius: 6px;
+}

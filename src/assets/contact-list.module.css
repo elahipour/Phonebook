@@ -1,0 +1,171 @@
+.contactlist_wrapper {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  max-height: 300px;
+  width: 100%;
+  overflow-y: scroll;
+}
+.contactlist_wrapper > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: fit-content;
+  padding: 0;
+}
+.contactlist_wrapper > ul > li {
+  position:relative;
+  background-color: #0073df;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 20px 25px;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 100%;
+  }
+  .contactlist_wrapper > ul > li > div {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.contactlist_wrapper > ul > li > div > div {
+  display: flex;
+  align-items: center;
+
+}
+
+.contactlist_wrapper > ul > li > div > div > span:last-child {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #000000;
+  user-select: none;
+}
+
+.contactlist_wrapper > ul > li > div >h4:first-child{
+  position: absolute;
+  top:0px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  border-radius:0% 0% 50% 50%;
+  background-color: #c1c1c141;
+  color:#0073df;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  animation:setContactAnim 1s forwards;
+ 
+}
+.contactlist_wrapper>ul>li>div>h4:nth-child(2)>p{
+  overflow: hidden;
+max-width: 150px;
+display: flex;
+flex-wrap: nowrap;
+}
+.contactlist_wrapper>ul>li>div>h4:nth-child(3)>p{
+  overflow: hidden;
+max-width: 220px;
+display: flex;
+flex-wrap: nowrap;
+}
+.contactlist_wrapper>ul>li>div>h4:nth-child(4){
+  overflow: hidden;
+max-width: 350px;
+display: flex;
+flex-wrap: nowrap;
+}
+.contactlist_wrapper>ul>li>div>h4:nth-child(5)>p{
+  overflow: hidden;
+max-width: 80px;
+display: flex;
+flex-wrap: nowrap;
+}
+
+.contactlist_wrapper>ul>li>div>h4>img{
+  filter: brightness(0) invert(1);
+  width: 18px;
+}
+
+.contactlist_wrapper > ul > li > div >h4{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+@keyframes setContactAnim {
+  0%{
+    left: 79%;
+    width: 60px;
+    height: 60px;
+    font-size: 2.2rem;
+  }
+
+}
+.contactlist_wrapper > ul > li > div > div > span:first-child {
+  cursor: pointer;
+  bottom: 2px;
+  position: relative;
+  font-size: 1rem;
+  transform: rotate(-45deg);
+  transition: transform .1s ease-in-out;
+  color:rgb(109, 204, 255);
+  user-select: none;
+}
+.contactlist_wrapper > ul > li > div > div > span:first-child:hover {
+  transform: rotate(90deg);
+
+}
+
+
+
+@media screen and (min-width:580px){
+  .contactlist_wrapper>ul>li>div{
+    display: flex;
+    flex-wrap: wrap;
+  width: 100%;
+    } 
+}
+@media screen and (max-width:580px){
+  .contactlist_wrapper>ul>li{
+      width: 100%;
+  }
+  .contactlist_wrapper>ul>li>div{
+  display: flex;
+  flex-wrap: wrap;
+width: 100%;
+  } 
+  .contactlist_wrapper{
+    width: 100%;
+  }
+  .contactlist_wrapper>ul{
+    width: 100%;
+  }
+}
+@media screen and (max-width:375px){
+ 
+  .contactlist_wrapper>ul>li{
+      width: 100%;
+      padding: 28px 30px;
+  }
+  .contactlist_wrapper>ul{
+    width: 100%;
+  }
+  .contactlist_wrapper>ul>li>div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  } 
+  .contactlist_wrapper>ul>li>div>div:first-child{
+    position: absolute !important;
+    top: 150px;
+    right: 15px;
+    
+  }
+
+}
